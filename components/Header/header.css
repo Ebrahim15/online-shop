@@ -1,0 +1,118 @@
+:root {
+    --MAINCOLOR: #013D29;
+}
+
+/* .header_container {
+    display: none;
+} */
+
+
+@media only screen and (min-width: 992px) {
+
+    /* .header_container {
+        background-color: bisque;
+        background-image: url('/assets/images/perfume2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center 40%;
+    } */
+
+    .header_container {
+        background-color: bisque;
+        overflow-x: hidden;
+    }
+
+    .text_container {
+        padding: 8rem 5rem;
+        background-color: hsla(0, 11%, 89%, 0.393);
+    }
+
+    .images_container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        /* z-index: 0; */
+    }
+
+    .slider {
+        position: absolute;
+        width: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        animation: slide;
+        animation-duration: 16.5s;
+        animation-delay: 3s;
+        animation-iteration-count: infinite;
+    }
+
+    .slider div {
+        /* z-index: 0; */
+        width: 100vw;
+        height: inherit;
+        position: relative;
+    }
+
+    .slider img {
+        /* z-index: 0; */
+    }
+
+
+    @keyframes slide {
+        0%{
+            transform: translateX(0);
+        }
+        15%{
+            transform: translateX(-100vw);
+        }
+        35%{
+            transform: translateX(-100vw);
+        }
+        50%{
+            transform: translateX(-200vw);
+        }
+        70%{
+            /* opacity: 1; */
+            transform: translateX(-200vw);
+        }
+        85%{
+            transform: translateX(-300vw);
+        }
+        99%{
+            opacity: 1;
+            transform: translateX(-300vw);
+        }
+        99.001%{
+            opacity: 0;
+            transform: translateX(100vw);
+        }
+        99.002%{
+            opacity: 1;
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(0);
+        }
+
+    }
+
+    /* Another Design */
+
+    /* .header_container {
+        background-color: bisque;
+        background-image: url('/assets/images/shoes.jpg'), linear-gradient(to bottom,rgb(132, 185, 210), #fff);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+    } */
+
+    h1 {
+        /* background: inherit;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-stroke: 2px #013D29; */
+        /* text-shadow: 1px 1px #013D29; */
+    }
+
+}
