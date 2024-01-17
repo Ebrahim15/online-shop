@@ -1,7 +1,7 @@
-
-/* .card {
+/* 
+.card {
     display: none;
-} */
+}
 
 @media only screen and (min-width: 992px) {
     .card {
@@ -17,12 +17,19 @@
 
     .card:hover {
         width: 250px;
-        /* height: 510px; */
-        /* transform: scale(1.1); */
+        
     }
 
     .card p {
         text-shadow: 2px 2px 25px black;
     }
 
+} */
+
+.card {
+    transition: transform 500ms;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }

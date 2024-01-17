@@ -1,0 +1,12 @@
+.filter_button{
+    position: relative;
+    /* padding: 0.5rem 1rem; */
+    background-color: rgba(228, 228, 228, 0.504);
+    border-radius: 9999px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-weight:500;
+}

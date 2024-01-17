@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Card = ({title, image, bgColor}) => {
   return (
-    <div className={`card ${bgColor}`}>
+    <div className={`card h-[400px] w-[170px] cursor-pointer rounded-xl overflow-hidden relative ${bgColor}`}>
         <Image
           src={image}
           alt="cart"
